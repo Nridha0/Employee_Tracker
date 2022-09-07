@@ -19,7 +19,7 @@ CREATE TABLE role_t (
 );
 
 --create employees table
-CREATE TABLE employees(
+CREATE TABLE employee (
     id INT PRIMARY KEY auto_increment NOT NULL,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR (30) NOT NULL,
@@ -28,6 +28,3 @@ CREATE TABLE employees(
     FOREIGN KEY (role_t_id) REFERENCES role_t(id),
 );
 
-SELECT * FROM employees;
-SELECT * FROM department;
-SELECT * FROM role_t;
